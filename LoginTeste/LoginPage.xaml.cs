@@ -58,6 +58,7 @@ public partial class LoginPage : ContentPage
 
     private async void txtSenha_Completed(object sender, EventArgs e)
     {
+        txtSenha.HideSoftInputAsync(CancellationToken.None);
         await ValidarUsuario();
     }
 }
